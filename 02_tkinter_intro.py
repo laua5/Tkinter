@@ -2,11 +2,7 @@ from tkinter import *
 root = Tk()
 
 root.title("Welcome")
-root.geometry("600x200")
-root.maxsize(800, 400)
-
-root.title("My first window")
-greeting = Label(text="Hello Tkinter")
-greeting.pack()
-
+welcome = Label(root, bg="black", fg="white", text="Welcome",
+                font=("Times",50, "bold"))
+welcome.pack()
 root.mainloop()
